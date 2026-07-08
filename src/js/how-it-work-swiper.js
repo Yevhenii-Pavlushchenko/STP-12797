@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const track = document.querySelector('[data-slider-track]');
-  const slides = document.querySelectorAll('[data-slider-slide]');
-  const dots = document.querySelectorAll('[data-slider-dot]');
-  const btnPrev = document.querySelector('[data-slider-prev]');
-  const btnNext = document.querySelector('[data-slider-next]');
+  const track = document.querySelector('[data-hiw-track]');
+  const slides = document.querySelectorAll('[data-hiw-slide]');
+  const dots = document.querySelectorAll('[data-hiw-dot]');
+  const btnPrev = document.querySelector('[data-hiw-prev]');
+  const btnNext = document.querySelector('[data-hiw-next]');
 
   if (!track || slides.length === 0) return;
 
   const scrollToSlide = index => {
     if (index >= 0 && index < slides.length) {
       const slideWidth = slides[0].getBoundingClientRect().width;
-      const gap = 16;
+      const gap = 20; // Соответствует мобильному gap в CSS
       track.scrollTo({
         left: index * (slideWidth + gap),
         behavior: 'smooth',
@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   btnPrev?.addEventListener('click', () => {
-    const activeDot = document.querySelector('[data-slider-dot].active');
+    const activeDot = document.querySelector('[data-hiw-dot].active');
     const currentIndex = parseInt(activeDot?.dataset.slide || '0', 10);
     scrollToSlide(currentIndex - 1);
   });
 
   btnNext?.addEventListener('click', () => {
-    const activeDot = document.querySelector('[data-slider-dot].active');
+    const activeDot = document.querySelector('[data-hiw-dot].active');
     const currentIndex = parseInt(activeDot?.dataset.slide || '0', 10);
     scrollToSlide(currentIndex + 1);
   });
