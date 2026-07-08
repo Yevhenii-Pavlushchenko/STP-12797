@@ -32,8 +32,8 @@ body {
   margin: 0;
   padding-top: 79px;
   font-family: var(--font-inter);
-  background-color: var(--black-color);
-  color: var(--white-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 body[data-scroll='false'] {
   overflow: hidden;
@@ -61,7 +61,6 @@ h2,
 a,
 li {
   font-family: var(--font-cormorant);
-  color: var(--white-color);
 }
 
 .visually-hidden {
