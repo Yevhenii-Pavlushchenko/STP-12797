@@ -26,11 +26,11 @@
 
   width: 24px;
   height: 24px;
-  color: var(--white-color);
+  color: var(--text-color);
   transition: color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    color: var(--orange-color);
+    color: var(--bronze-color);
     transform: scale(1.1);
   }
 
@@ -113,4 +113,32 @@
   @media screen and (min-width: 1440px) {
     font-size: 24px;
   }
+}
+
+.disclosure_item {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  font-family: var(--font-inter);
+  font-size: 14px;
+
+@media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+
+.disclosure_item:last-child {
+  margin-bottom: 0;
+}
+
+.disclosure_item::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 6px;
+  height: 6px;
+
+  background-color: var(--text-color);
+  border-radius: 50%;
 }

@@ -1,4 +1,4 @@
-/* Общие настройки секции */
+
 .feat_section {
   padding: 25px 0;
 }
@@ -15,7 +15,6 @@
   align-items: center;
 }
 
-/* Заголовок */
 .feat_section-title {
   font-size: 40px;
   font-weight: 700;
@@ -44,7 +43,6 @@
   }
 }
 
-/* Трек */
 .feat_slider-track {
   display: flex;
   gap: 20px;
@@ -72,7 +70,6 @@
   }
 }
 
-/* Карточки */
 .feat_card {
   flex: 0 0 260px;
   height: 253px;
@@ -98,7 +95,6 @@
   }
 }
 
-/* Контейнер иконки */
 .feat_card-icon-wrap {
   width: 100%;
   margin-bottom: 22px;
@@ -115,7 +111,6 @@
   stroke: var(--text-color);
 }
 
-/* Текст внутри карточки */
 .feat_card-content {
   display: flex;
   flex-direction: column;

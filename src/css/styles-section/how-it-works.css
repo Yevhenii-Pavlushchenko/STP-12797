@@ -40,12 +40,10 @@
   .hiw_slider-viewport {
     width: 100%;
     max-width: 1326px;
-    /* 3 карточки по 422px + 2 гэпа по 30px */
     overflow: visible;
   }
 }
 
-/* Трек слайдера */
 .hiw_slider-track {
   display: flex;
   gap: 20px;
@@ -73,7 +71,6 @@
   }
 }
 
-/* Стили карточек */
 .hiw_card {
   flex: 0 0 280px;
   scroll-snap-align: center;

@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   dots.forEach((dot, index) => {
-    dot.setAttribute('data-slide', index); // Автоматически проставим индексы дата-атрибутов
+    dot.setAttribute('data-slide', index);
     dot.addEventListener('click', e => {
       const targetIndex = parseInt(e.currentTarget.dataset.slide, 10);
       scrollToSlide(targetIndex);

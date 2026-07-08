@@ -78,7 +78,7 @@ li {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px;
+  scroll-padding-top: 50px;
 }
 
 @media screen and (min-width: 1440px) {

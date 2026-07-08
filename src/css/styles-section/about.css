@@ -26,7 +26,6 @@
   }
 }
 
-/* Текстовый блок-обертка */
 .abt_about-content {
   display: flex;
   flex-direction: column;

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const scrollToSlide = index => {
     if (index >= 0 && index < slides.length) {
       const slideWidth = slides[0].getBoundingClientRect().width;
-      const gap = 20; // Соответствует мобильному gap в CSS
+      const gap = 20;
       track.scrollTo({
         left: index * (slideWidth + gap),
         behavior: 'smooth',
