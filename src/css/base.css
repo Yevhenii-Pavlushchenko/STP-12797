@@ -1,11 +1,14 @@
 :root {
-  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-cormorant: 'Cormorant', serif;
   --font-inter: 'Inter', sans-serif;
 
-  --black-color: #000000;
+  --background-color: #D4C4A8;
+  --text-color: #7a5c44;
+  --black-color: #2d1a0e;
+  --faq-text-color: #3e2f1c;
   --white-color: #ffffff;
-  --bronze-color: #9a8270;
-  --orange-color: #f38c28;
+  --bronze-color: #c4956a;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -57,7 +60,7 @@ h1,
 h2,
 a,
 li {
-  font-family: var(--font-dm-sans);
+  font-family: var(--font-cormorant);
   color: var(--white-color);
 }
 
